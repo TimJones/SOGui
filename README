@@ -1,1 +1,11 @@
 This is the README for SOGui, a window and widget interface for SDL and Opengl using FBOs
+
+Project files supplied are Code::Blocks for MinGW on Windows
+
+Current dependencies:
+SDL
+OpenGL
+
+So far there is only a concept project, in which I will build & test ideas before formulating a best way forward. This could be either like Boost (put everything into .hpp header files) or some other way (friend drawing methods, functors, inheritence).
+
+Tim Jones - 21-Nov-09
