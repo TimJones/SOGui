@@ -645,11 +645,10 @@
 1258792501 c:\programming\projects\sogui\concept\include\myfbo.h
 	<FBO.h>
 
-1259016209 source:c:\programming\projects\sogui\concept\src\window.cpp
+1259016326 source:c:\programming\projects\sogui\concept\src\window.cpp
 	"Window.h"
 
-1259015628 c:\programming\projects\sogui\concept\include\window.h
-	<SDL/SDL_ttf.h>
+1259016855 c:\programming\projects\sogui\concept\include\window.h
 	<string>
 	"FBO.h"
 	"FontTexture.h"

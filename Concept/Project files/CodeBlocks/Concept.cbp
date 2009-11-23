@@ -46,10 +46,12 @@
 		</Linker>
 		<Unit filename="..\..\include\App.h" />
 		<Unit filename="..\..\include\FBO.h" />
+		<Unit filename="..\..\include\FontTexture.h" />
 		<Unit filename="..\..\include\MyFBO.h" />
 		<Unit filename="..\..\include\Window.h" />
 		<Unit filename="..\..\src\App.cpp" />
 		<Unit filename="..\..\src\FBO.cpp" />
+		<Unit filename="..\..\src\FontTexture.cpp" />
 		<Unit filename="..\..\src\MyFBO.cpp" />
 		<Unit filename="..\..\src\Window.cpp" />
 		<Unit filename="..\..\src\main.cpp" />
