@@ -1,22 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
 	<ActiveTarget name="Debug" />
-	<File name="..\..\include\App.h" open="1" top="0" tabpos="1">
-		<Cursor position="685" topLine="0" />
+	<File name="..\..\include\App.h" open="1" top="0" tabpos="5">
+		<Cursor position="430" topLine="0" />
 	</File>
 	<File name="..\..\include\FBO.h" open="1" top="0" tabpos="3">
-		<Cursor position="382" topLine="3" />
+		<Cursor position="97" topLine="0" />
 	</File>
-	<File name="..\..\src\App.cpp" open="1" top="0" tabpos="2">
-		<Cursor position="1543" topLine="51" />
+	<File name="..\..\include\Window.h" open="1" top="0" tabpos="6">
+		<Cursor position="391" topLine="0" />
 	</File>
-	<File name="..\..\src\FBO.cpp" open="1" top="1" tabpos="4">
-		<Cursor position="273" topLine="0" />
+	<File name="..\..\src\App.cpp" open="1" top="0" tabpos="1">
+		<Cursor position="1576" topLine="47" />
 	</File>
-	<File name="..\..\src\MyFBO.cpp" open="1" top="0" tabpos="5">
-		<Cursor position="1100" topLine="0" />
+	<File name="..\..\src\FBO.cpp" open="1" top="0" tabpos="7">
+		<Cursor position="3120" topLine="72" />
 	</File>
-	<File name="..\..\src\Window.cpp" open="1" top="0" tabpos="6">
-		<Cursor position="744" topLine="26" />
+	<File name="..\..\src\MyFBO.cpp" open="0" top="0" tabpos="5">
+		<Cursor position="471" topLine="0" />
+	</File>
+	<File name="..\..\src\Window.cpp" open="1" top="1" tabpos="2">
+		<Cursor position="1244" topLine="3" />
+	</File>
+	<File name="..\..\src\main.cpp" open="1" top="0" tabpos="4">
+		<Cursor position="16" topLine="0" />
 	</File>
 </CodeBlocks_layout_file>

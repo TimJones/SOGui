@@ -1,13 +1,8 @@
 #ifndef FBO_H
 #define FBO_H
 
-#ifdef __APPLE__
 #include <SDL/SDL.h>
 #include <SDL/SDL_opengl.h>
-#else
-#include <SDL.h>
-#include <SDL_opengl.h>
-#endif
 
 class FBO
 {

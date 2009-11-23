@@ -635,11 +635,9 @@
 1258796119 source:c:\programming\projects\sogui\concept\src\fbo.cpp
 	"FBO.h"
 
-1258792790 c:\programming\projects\sogui\concept\include\fbo.h
+1258927637 c:\programming\projects\sogui\concept\include\fbo.h
 	<SDL/SDL.h>
 	<SDL/SDL_opengl.h>
-	<SDL.h>
-	<SDL_opengl.h>
 
 1258796235 source:c:\programming\projects\sogui\concept\src\myfbo.cpp
 	"MyFBO.h"
@@ -647,25 +645,235 @@
 1258792501 c:\programming\projects\sogui\concept\include\myfbo.h
 	<FBO.h>
 
-1258797423 source:c:\programming\projects\sogui\concept\src\window.cpp
+1259016209 source:c:\programming\projects\sogui\concept\src\window.cpp
 	"Window.h"
 
-1258797209 c:\programming\projects\sogui\concept\include\window.h
-	<FBO.h>
+1259015628 c:\programming\projects\sogui\concept\include\window.h
+	<SDL/SDL_ttf.h>
 	<string>
+	"FBO.h"
+	"FontTexture.h"
 
-1258797501 source:c:\programming\projects\sogui\concept\src\app.cpp
+1259014587 source:c:\programming\projects\sogui\concept\src\app.cpp
 	"App.h"
 
-1258797335 c:\programming\projects\sogui\concept\include\app.h
+1259009017 c:\programming\projects\sogui\concept\include\app.h
 	<SDL/SDL.h>
 	<SDL/SDL_opengl.h>
-	<SDL.h>
-	<SDL_opengl.h>
+	<SDL/SDL_ttf.h>
 	"Window.h"
 
-1258760044 source:c:\programming\projects\sogui\concept\src\main.cpp
-	<SDL/SDL.h>
-	<SDL.h>
+1259004115 source:c:\programming\projects\sogui\concept\src\main.cpp
 	"App.h"
+
+1184446968 c:\programming\tools\sdl_ttf-2.0.9\sdl_ttf.h
+	"SDL.h"
+	"begin_code.h"
+	"close_code.h"
+
+1258925474 c:\programming\tools\msys1.0\local\include\sdl\sdl.h
+	"SDL_main.h"
+	"SDL_stdinc.h"
+	"SDL_audio.h"
+	"SDL_cdrom.h"
+	"SDL_cpuinfo.h"
+	"SDL_endian.h"
+	"SDL_error.h"
+	"SDL_events.h"
+	"SDL_loadso.h"
+	"SDL_mutex.h"
+	"SDL_rwops.h"
+	"SDL_thread.h"
+	"SDL_timer.h"
+	"SDL_video.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+
+1258925474 c:\programming\tools\msys1.0\local\include\sdl\sdl_main.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+	"begin_code.h"
+	"close_code.h"
+
+1258925475 c:\programming\tools\msys1.0\local\include\sdl\sdl_stdinc.h
+	"SDL_config.h"
+	<sys/types.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdlib.h>
+	<malloc.h>
+	<stddef.h>
+	<stdarg.h>
+	<memory.h>
+	<string.h>
+	<strings.h>
+	<inttypes.h>
+	<stdint.h>
+	<ctype.h>
+	<iconv.h>
+	"begin_code.h"
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+	<malloc.h>
+	<stdlib.h>
+	"close_code.h"
+
+1258925475 c:\programming\tools\msys1.0\local\include\sdl\sdl_config.h
+	"SDL_platform.h"
+	<stdarg.h>
+
+1258925475 c:\programming\tools\msys1.0\local\include\sdl\sdl_platform.h
+
+1258925475 c:\programming\tools\msys1.0\local\include\sdl\begin_code.h
+
+1258925475 c:\programming\tools\msys1.0\local\include\sdl\close_code.h
+
+1258925474 c:\programming\tools\msys1.0\local\include\sdl\sdl_audio.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_endian.h"
+	"SDL_mutex.h"
+	"SDL_thread.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1258925474 c:\programming\tools\msys1.0\local\include\sdl\sdl_error.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1258925474 c:\programming\tools\msys1.0\local\include\sdl\sdl_endian.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1258925474 c:\programming\tools\msys1.0\local\include\sdl\sdl_mutex.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1258925475 c:\programming\tools\msys1.0\local\include\sdl\sdl_thread.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_mutex.h"
+	"begin_code.h"
+	<process.h>
+	"close_code.h"
+
+1258925475 c:\programming\tools\msys1.0\local\include\sdl\sdl_rwops.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1258925474 c:\programming\tools\msys1.0\local\include\sdl\sdl_cdrom.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1258925474 c:\programming\tools\msys1.0\local\include\sdl\sdl_cpuinfo.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1258925474 c:\programming\tools\msys1.0\local\include\sdl\sdl_events.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_active.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_quit.h"
+	"begin_code.h"
+	"close_code.h"
+
+1258925474 c:\programming\tools\msys1.0\local\include\sdl\sdl_active.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1258925474 c:\programming\tools\msys1.0\local\include\sdl\sdl_keyboard.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_keysym.h"
+	"begin_code.h"
+	"close_code.h"
+
+1258925474 c:\programming\tools\msys1.0\local\include\sdl\sdl_keysym.h
+
+1258925474 c:\programming\tools\msys1.0\local\include\sdl\sdl_mouse.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1258925475 c:\programming\tools\msys1.0\local\include\sdl\sdl_video.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1258925474 c:\programming\tools\msys1.0\local\include\sdl\sdl_joystick.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1258925475 c:\programming\tools\msys1.0\local\include\sdl\sdl_quit.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+
+1258925474 c:\programming\tools\msys1.0\local\include\sdl\sdl_loadso.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1258925475 c:\programming\tools\msys1.0\local\include\sdl\sdl_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1258925475 c:\programming\tools\msys1.0\local\include\sdl\sdl_version.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1258925475 c:\programming\tools\msys1.0\local\include\sdl\sdl_opengl.h
+	"SDL_config.h"
+	<windows.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<gl.h>
+	<glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<windows.h>
+	<stddef.h>
+
+1258925570 c:\programming\tools\msys1.0\local\include\sdl\sdl_ttf.h
+	"SDL.h"
+	"begin_code.h"
+	"close_code.h"
+
+1259016164 c:\programming\projects\sogui\concept\include\fonttexture.h
+	<SDL/SDL.h>
+	<SDL/SDL_opengl.h>
+	<SDL/SDL_ttf.h>
+	<string>
+
+1259016264 source:c:\programming\projects\sogui\concept\src\fonttexture.cpp
+	"FontTexture.h"
 

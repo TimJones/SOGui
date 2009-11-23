@@ -1,14 +1,9 @@
 #ifndef APP_H
 #define APP_H
 
-#ifdef __APPLE__
 #include <SDL/SDL.h>
 #include <SDL/SDL_opengl.h>
-#else
-#include <SDL.h>
-#include <SDL_opengl.h>
-#endif
-
+#include <SDL/SDL_ttf.h>
 #include "Window.h"
 
 class App
@@ -22,7 +17,6 @@ class App
         unsigned int Run();
     protected:
     private:
-        static const unsigned short w = 300, h = 600;
         bool m_Initialised;
 		bool m_FullScreen;
 		float m_RotT, m_RotS;

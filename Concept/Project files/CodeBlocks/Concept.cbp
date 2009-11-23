@@ -33,15 +33,16 @@
 		<Compiler>
 			<Add option="-Wall" />
 			<Add directory="..\..\include" />
-			<Add directory="$(#sdl.include)" />
+			<Add directory="$(#msys.include)" />
 		</Compiler>
 		<Linker>
 			<Add library="mingw32" />
 			<Add library="SDLmain" />
 			<Add library="SDL.dll" />
+			<Add library="SDL_ttf.dll" />
 			<Add library="opengl32" />
 			<Add library="glu32" />
-			<Add directory="$(#sdl.lib)" />
+			<Add directory="$(#msys.lib)" />
 		</Linker>
 		<Unit filename="..\..\include\App.h" />
 		<Unit filename="..\..\include\FBO.h" />
