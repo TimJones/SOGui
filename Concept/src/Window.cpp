@@ -6,7 +6,8 @@ m_X( x ),
 m_Y( y ),
 m_Title( "Window Title" )
 {
-    //ctor
+    SDL_Color white = { 255, 255, 255, 0 };
+    m_FontTexture = new FontTexture( "tahoma.ttf", 16, m_Title.c_str(), white );
 }
 
 void Window::Draw()
@@ -16,7 +17,7 @@ void Window::Draw()
     glClearColor( 1.0f, 1.0f, 1.0f, 1.0f );
 	glClear( GL_COLOR_BUFFER_BIT );
 
-    // 'Window' border
+	// 'Window' border
 	glBegin( GL_QUADS );
         glColor3ub( 20, 35, 55 ); glVertex2i( 0, 0 );
         glColor3ub( 65, 100, 155 ); glVertex2i( m_Width - 1, 0 );
@@ -34,13 +35,29 @@ void Window::Draw()
     glEnd();
 
     // Inner frame
-    glColor3ub( 25, 25, 25 );
+    glColor3ub( 0, 0, 0 );
     glBegin( GL_QUADS );
-        glVertex2i( 5, 25 );
-        glVertex2i( m_Width - 5, 25 );
+        glVertex2i( 5, m_FontTexture->GetHeight() + 10 );
+        glVertex2i( m_Width - 5, m_FontTexture->GetHeight() + 10 );
         glVertex2i( m_Width - 5, m_Height - 5 );
         glVertex2i( 5, m_Height - 5 );
     glEnd();
+
+    // Font rendering to texture bit here
+    glBlendFunc( GL_ONE, GL_ONE );
+	glEnable( GL_BLEND );
+	glEnable( GL_TEXTURE_2D );
+	glBindTexture( GL_TEXTURE_2D, m_FontTexture->GetTextureID() );
+	glColor3f(1.0f, 1.0f, 1.0f);
+
+	glBegin( GL_QUADS );
+        glTexCoord2f(0.0f, 0.0f); glVertex2i( 5, 5 );
+		glTexCoord2f(1.0f, 0.0f); glVertex2i( m_FontTexture->GetWidth() + 5, 5 );
+		glTexCoord2f(1.0f, 1.0f); glVertex2i( m_FontTexture->GetWidth() + 5, m_FontTexture->GetHeight() + 5 );
+		glTexCoord2f(0.0f, 1.0f); glVertex2i( 5, m_FontTexture->GetHeight() + 5 );
+    glEnd();
+    glDisable( GL_TEXTURE_2D );
+    glDisable( GL_BLEND );
 
     End();
 
@@ -60,5 +77,5 @@ void Window::Draw()
 
 Window::~Window()
 {
-    //dtor
+    delete m_FontTexture;
 }

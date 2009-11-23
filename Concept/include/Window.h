@@ -1,8 +1,9 @@
 #ifndef WINDOW_H
 #define WINDOW_H
 
-#include <FBO.h>
 #include <string>
+#include "FBO.h"
+#include "FontTexture.h"
 
 class Window : public FBO
 {
@@ -15,6 +16,7 @@ class Window : public FBO
     protected:
         unsigned int m_X, m_Y;
         std::string m_Title;
+        FontTexture* m_FontTexture;
 
     private:
 };

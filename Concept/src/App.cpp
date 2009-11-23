@@ -69,7 +69,10 @@ unsigned int App::Init( const unsigned int& width, const  unsigned int& height, 
     if( glGetError() != GL_NO_ERROR )
         return 5;
 
-    wnd = new Window( 20, 20, 300, 600 );
+    if( TTF_Init() == -1 )
+        return 6;
+
+    wnd = new Window( 20, 20, 600, 600 );
 
     m_Initialised = true;
     return 0;
@@ -104,9 +107,8 @@ unsigned int App::Run()
 				    break;
 			}
 		}
-
 		DrawScene();
-	}
+    }
 	return 0;
 }
 
