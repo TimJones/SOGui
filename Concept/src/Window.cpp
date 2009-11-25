@@ -1,13 +1,13 @@
 #include "Window.h"
 
-Window::Window( unsigned int x, unsigned int y, unsigned int width, unsigned int height ):
+Window::Window( unsigned int x, unsigned int y, unsigned int width, unsigned int height, const char* title ):
 FBO( width, height ),
 m_X( x ),
 m_Y( y ),
-m_Title( "Window Title" )
+m_Title( title )
 {
     SDL_Color white = { 255, 255, 255, 0 };
-    m_FontTexture = new FontTexture( "tahoma.ttf", 16, m_Title.c_str(), white );
+    m_FontTexture = new FontTexture( "tahoma.ttf", 16, m_Title, white );
 }
 
 void Window::Draw()

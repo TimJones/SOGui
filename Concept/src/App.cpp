@@ -72,7 +72,7 @@ unsigned int App::Init( const unsigned int& width, const  unsigned int& height, 
     if( TTF_Init() == -1 )
         return 6;
 
-    wnd = new Window( 20, 20, 600, 600 );
+    wnd = new Window( 20, 20, 600, 600, "Title Here" );
 
     m_Initialised = true;
     return 0;
@@ -81,6 +81,7 @@ unsigned int App::Init( const unsigned int& width, const  unsigned int& height, 
 unsigned int App::Run()
 {
     bool done = false;
+    bool window_active = false;
 	SDL_Event event;
 
 	while( !done )
@@ -89,6 +90,17 @@ unsigned int App::Run()
 		{
 		    switch( event.type )
 			{
+			    case SDL_MOUSEBUTTONDOWN:
+                    if( event.button.button == SDL_BUTTON_LEFT && wnd->IsInActiveArea( event.button.x, event.button.y ) )
+                        window_active = true;
+                    break;
+                case SDL_MOUSEBUTTONUP:
+                    window_active = false;
+                    break;
+                case SDL_MOUSEMOTION:
+                    if( window_active )
+                        wnd->MoveWindowPos( event.motion.xrel, event.motion.yrel );
+                    break;
 				case SDL_KEYDOWN:
 				    // handle key presses here
 				    switch( event.key.keysym.sym )
