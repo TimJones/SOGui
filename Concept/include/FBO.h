@@ -6,25 +6,25 @@
 
 class FBO
 {
-    public:
-        FBO( unsigned int width, unsigned int height );
-        virtual ~FBO();
+	public:
+		FBO( unsigned int width, unsigned int height );
+		virtual ~FBO();
 
-        GLuint getTextureID() { return m_TextureID; };
+		GLuint getTextureID() { return m_TextureID; };
 
-        virtual void Draw() = 0;
+		virtual void Draw() = 0;
 
-    protected:
-        unsigned int m_Width, m_Height;
+	protected:
+		unsigned int m_Width, m_Height;
 		GLuint m_FBOID, m_TextureID;
 		GLuint m_RenderBufferID;
 
-        void Begin();
-        void Begin2D();
-        void End();
+		void Begin();
+		void Begin2D();
+		void End();
 
 		// OpenGL Extensions functors definsed for us in SDL_opengl.h
-        static PFNGLGENFRAMEBUFFERSEXTPROC         glGenFramebuffersEXT;
+		static PFNGLGENFRAMEBUFFERSEXTPROC         glGenFramebuffersEXT;
 		static PFNGLBINDFRAMEBUFFEREXTPROC         glBindFramebufferEXT;
 		static PFNGLGENRENDERBUFFERSEXTPROC        glGenRenderbuffersEXT;
 		static PFNGLBINDRENDERBUFFEREXTPROC        glBindRenderbufferEXT;
@@ -36,10 +36,10 @@ class FBO
 		static PFNGLDELETERENDERBUFFERSEXTPROC     glDeleteRenderbuffersEXT;
 		static PFNGLGENERATEMIPMAPEXTPROC          glGenerateMipmapEXT;
 
-        static bool m_ExtensionsLoaded;
-        void LoadExtensions();
+		static bool m_ExtensionsLoaded;
+		void LoadExtensions();
 
-    private:
+	private:
 };
 
 #endif // FBO_H

@@ -8,16 +8,17 @@
 
 class App
 {
-    public:
-        App();
-        virtual ~App();
+	public:
+		App();
+		virtual ~App();
 
-        unsigned int Init( const unsigned int& width, const  unsigned int& height, const unsigned int& depth, const bool& full_screen );
-        unsigned int InitFBO();
-        unsigned int Run();
-    protected:
-    private:
-        bool m_Initialised;
+		unsigned int Init( const unsigned int& width, const  unsigned int& height, const unsigned int& depth, const bool& full_screen );
+		unsigned int InitFBO();
+		unsigned int Run();
+	protected:
+
+	private:
+		bool m_Initialised;
 		bool m_FullScreen;
 		float m_RotT, m_RotS;
 		unsigned int m_ScreenWidth, m_ScreenHeight, m_ScreenDepth;
