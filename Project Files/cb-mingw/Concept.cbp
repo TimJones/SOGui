@@ -7,9 +7,9 @@
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="..\..\bin\Concept-d" prefix_auto="1" extension_auto="1" />
-				<Option working_dir="..\..\bin\" />
-				<Option object_output="..\..\obj\Debug\" />
+				<Option output="..\..\Concept\bin\Concept-d" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="..\..\Concept\bin\" />
+				<Option object_output="..\..\Concept\obj\Debug" />
 				<Option type="0" />
 				<Option compiler="gcc" />
 				<Compiler>
@@ -17,9 +17,9 @@
 				</Compiler>
 			</Target>
 			<Target title="Release">
-				<Option output="..\..\bin\Concept" prefix_auto="1" extension_auto="1" />
-				<Option working_dir="..\..\bin\" />
-				<Option object_output="..\..\obj\Release\" />
+				<Option output="..\..\Concept\bin\Concept" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="..\..\Concept\bin" />
+				<Option object_output="..\..\Concept\obj\Release\" />
 				<Option type="0" />
 				<Option compiler="gcc" />
 				<Compiler>
@@ -32,7 +32,7 @@
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
-			<Add directory="..\..\include" />
+			<Add directory="..\..\Concept\include" />
 			<Add directory="$(#msys.include)" />
 		</Compiler>
 		<Linker>
@@ -44,17 +44,17 @@
 			<Add library="glu32" />
 			<Add directory="$(#msys.lib)" />
 		</Linker>
-		<Unit filename="..\..\include\App.h" />
-		<Unit filename="..\..\include\FBO.h" />
-		<Unit filename="..\..\include\FontTexture.h" />
-		<Unit filename="..\..\include\MyFBO.h" />
-		<Unit filename="..\..\include\Window.h" />
-		<Unit filename="..\..\src\App.cpp" />
-		<Unit filename="..\..\src\FBO.cpp" />
-		<Unit filename="..\..\src\FontTexture.cpp" />
-		<Unit filename="..\..\src\MyFBO.cpp" />
-		<Unit filename="..\..\src\Window.cpp" />
-		<Unit filename="..\..\src\main.cpp" />
+		<Unit filename="..\..\Concept\include\App.h" />
+		<Unit filename="..\..\Concept\include\FBO.h" />
+		<Unit filename="..\..\Concept\include\FontTexture.h" />
+		<Unit filename="..\..\Concept\include\MyFBO.h" />
+		<Unit filename="..\..\Concept\include\Window.h" />
+		<Unit filename="..\..\Concept\src\App.cpp" />
+		<Unit filename="..\..\Concept\src\FBO.cpp" />
+		<Unit filename="..\..\Concept\src\FontTexture.cpp" />
+		<Unit filename="..\..\Concept\src\MyFBO.cpp" />
+		<Unit filename="..\..\Concept\src\Window.cpp" />
+		<Unit filename="..\..\Concept\src\main.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
