@@ -4,6 +4,8 @@ Project files supplied are Code::Blocks for MinGW on Windows
 
 Current dependencies:
 SDL
+SDL_ttf
+TrueType 2
 OpenGL
 
 So far there is only a concept project, in which I will build & test ideas before formulating a best way forward. This could be either like Boost (put everything into .hpp header files) or some other way (friend drawing methods, functors, inheritence).
