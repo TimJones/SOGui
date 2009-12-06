@@ -7,7 +7,7 @@ m_Y( y ),
 m_Title( title )
 {
 	SDL_Color white = { 255, 255, 255, 0 };
-	m_FontTexture = new FontTexture( "tahoma.ttf", 16, m_Title, white );
+	m_FontTexture = new FontTexture( "DejaVuSans.ttf", 16, m_Title, white );
 }
 
 void Window::Draw()
