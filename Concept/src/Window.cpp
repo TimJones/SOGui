@@ -1,6 +1,6 @@
 #include "Window.h"
 
-Window::Window( unsigned int x, unsigned int y, unsigned int width, unsigned int height, const char* title ):
+Window::Window( int x, int y, unsigned int width, unsigned int height, const char* title ):
 FBO( width, height ),
 m_X( x ),
 m_Y( y ),
