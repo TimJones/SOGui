@@ -55,6 +55,12 @@
 				<Compiler>
 					<Add option="-g" />
 				</Compiler>
+				<Linker>
++					<Add library="SDL" />
++					<Add library="SDL_ttf" />
++					<Add library="GL" />
++					<Add library="GLU" />
++				</Linker>
 			</Target>
 			<Target title="Linux - Release">
 				<Option platforms="Unix;" />
@@ -68,6 +74,10 @@
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
++					<Add library="SDL" />
++					<Add library="SDL_ttf" />
++					<Add library="GL" />
++					<Add library="GLU" />
 				</Linker>
 			</Target>
 		</Build>
